@@ -1,6 +1,8 @@
 from flask import Flask, request, jsonify
 import pickle
 import numpy as np
+from dotenv import load_dotenv
+load_dotenv()
 
 # Load model
 with open('model.pkl', 'rb') as f:
